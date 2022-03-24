@@ -1,0 +1,181 @@
+@charset "UTF-8";
+body{
+overflow-x:auto;
+/* background:repeat 0 0 url(../images/background/bodybg04.png); */
+}
+.container-fluid{
+  width:1260px;
+}
+.fontM{
+  font-family:'Headline R',arial,sans-serif;
+}
+.fontS{
+  font-family:arial,sans-serif;
+}
+.fontKr{
+  font-family: 'BatangChe','Gulim';
+}
+img{
+  width:100%;
+}
+.mainText{
+  line-height: 1.5rem;
+}
+ul{
+  margin-block-start:0;
+    margin-block-end:0;
+    padding-inline-start:0;
+}
+li{
+  list-style: none;
+}
+/* 헤더 스타일 */
+.gnb{
+  background: #fffcc9;
+  z-index:1000;
+}
+.nav>li{
+  padding-left:6.56rem;
+  line-height: 3.3rem;
+}
+
+/* my picture 섹션01 */
+.mypic{
+  padding-top:6.25rem;
+}
+.picBox{
+  background: #fffcc9;
+  height:420px;
+  overflow: hidden;
+}
+.picBox>ul{
+  height:200px;
+  /* border:1px solid #ccc; */
+}
+.slides{
+  top:0;
+  left:0;
+}
+.slides.animated{
+  transition: 0.5s ease-out;
+}
+.slidesDown{
+  bottom:0;
+  left:0;
+}
+.slidesDown.animated{
+  transition: 0.5s ease-out;
+}
+.pic01{
+  padding:0;
+}
+.picBox>ul>li{
+  /* border:1px solid #ccc; */
+  transition: 0.5s ease-in;
+  width:150px;
+}
+.picBox>ul>li:hover>img{
+  transition: 0.1s ease-in;
+  width:130px;
+  cursor: pointer;
+  box-shadow: 11px 8px 35px #fbf589;
+  padding:auto;
+
+}
+.arrow{
+  top:45%;
+  cursor: pointer;
+}
+.left{
+  left:0;
+}
+.right{
+  right:0;
+}
+/* about Me 섹션02*/
+.about{
+    padding-top:7rem;
+  padding-bottom:5.19rem;
+  position:relative;
+}
+.me{
+  height:20.63rem;
+  background: #fffcc9;
+}
+.imgBox01{
+  height:15.19rem;
+  background: no-repeat 100% 100% url(../images/about/me01.png);
+  background-size:cover;
+}
+.info{
+  top:24%;
+  left:25%;
+}
+.info>ol>li{
+  list-style: inherit;
+}
+/* my Skill 섹션03*/
+.skillText>p{
+  padding:6.25rem 0;
+}
+.skillText>p>strong{
+  font-size:1.5rem;
+}
+.skillText{
+  background: no-repeat 0 0 url(../images/background/box.png);
+  background-size:cover;
+}
+/* 섹션03 */
+.myskill{
+  padding-top:6.25rem;
+}
+/* 섹션04 */
+#ssaem{
+  transition: 0.5s ease-in;
+  opacity:0;
+}
+#tetris{
+  transition: 0.5s ease-in;
+  opacity:0;
+}
+#ssaem.opacity{
+  transition: 0.5s ease-in;
+  opacity:1;
+}
+#tetris.opacity{
+  transition: 0.5s ease-in;
+  opacity:1;
+}
+.portfolio{
+  padding-top:6.25rem;
+}
+.porfol>dt{padding-left:60px; padding-bottom:30px;}
+.porfol>dd{
+  text-align: center;
+}
+button{
+  padding:10px 40px;
+  border:none;
+  background-color:#fffcc9;
+  box-shadow: 11px 8px 35px #fbf589;
+}
+.tetrisText{
+  text-align: right;
+  padding-top:50px;
+}
+.ssaemText{
+  text-align: left;
+  padding-top:50px;
+}
+.tetrisText>dt>img{
+  border:1px solid #000;
+}
+/* contact 스타일 섹션 05 */
+.contact{
+padding-top:5rem;
+}
+.contactBg{
+  background: no-repeat 0 0 url(../images/contact/bg.png);
+  background-size:cover;
+  padding:5rem 0 3rem;
+}
