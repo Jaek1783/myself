@@ -1,10 +1,7 @@
 @charset "UTF-8";
 body{
-overflow-x:auto;
+overflow-x:hidden;
 /* background:repeat 0 0 url(../images/background/bodybg04.png); */
-}
-.container-fluid{
-  width:1260px;
 }
 .fontM{
   font-family:'Headline R',arial,sans-serif;
@@ -29,7 +26,15 @@ ul{
 li{
   list-style: none;
 }
+h3{}
 /* 헤더 스타일 */
+header{
+  width:100%;
+}
+h1{
+  width:18.75rem;
+  float:left;
+}
 .gnb{
   background: #fffcc9;
   z-index:1000;
@@ -41,7 +46,9 @@ li{
 
 /* my picture 섹션01 */
 .mypic{
+  /* max-width:948px; */
   padding-top:6.25rem;
+  margin:0 auto;
 }
 .picBox{
   background: #fffcc9;
@@ -70,7 +77,6 @@ li{
   padding:0;
 }
 .picBox>ul>li{
-  /* border:1px solid #ccc; */
   transition: 0.5s ease-in;
   width:150px;
 }
@@ -82,28 +88,24 @@ li{
   padding:auto;
 
 }
-.arrow{
-  top:45%;
-  cursor: pointer;
-}
-.left{
-  left:0;
-}
-.right{
-  right:0;
-}
+
 /* about Me 섹션02*/
+.mainText{}
 .about{
-    padding-top:7rem;
+  padding-top:7rem;
   padding-bottom:5.19rem;
   position:relative;
 }
+.aboutBox{
+}
 .me{
+  width:25%;
   height:20.63rem;
   background: #fffcc9;
 }
 .imgBox01{
-  height:15.19rem;
+  width:10rem;
+  height:14rem;
   background: no-repeat 100% 100% url(../images/about/me01.png);
   background-size:cover;
 }
@@ -115,20 +117,25 @@ li{
   list-style: inherit;
 }
 /* my Skill 섹션03*/
+.mySkill{
+  padding-top:6.25rem;
+}
+.skillBr{
+  display: none;
+}
 .skillText>p{
-  padding:6.25rem 0;
+  padding:3rem 0;
 }
 .skillText>p>strong{
   font-size:1.5rem;
 }
 .skillText{
-  background: no-repeat 0 0 url(../images/background/box.png);
+  background: no-repeat 100% 0 url(../images/background/box.png);
   background-size:cover;
 }
-/* 섹션03 */
-.myskill{
-  padding-top:6.25rem;
-}
+.skillIcon{}
+.skillIcon>li{}
+
 /* 섹션04 */
 #ssaem{
   transition: 0.5s ease-in;
@@ -149,9 +156,12 @@ li{
 .portfolio{
   padding-top:6.25rem;
 }
+.ssaem>dt{
+  padding-left:30px;
+}
 .porfol>dt{padding-left:60px; padding-bottom:30px;}
-.porfol>dd{
-  text-align: center;
+#tetris>dt>img{
+  border:1px solid #ccc;
 }
 button{
   padding:10px 40px;

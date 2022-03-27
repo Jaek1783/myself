@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@media screen and (max-width:768px){
+  h1{
+    width:11.5rem;
+    padding-left:1.88rem;
+    float:left;
+  }
+  .title{
+    text-align: center;
+  }
+  .nav{
+    display:none;
+  }
+  .mypic{
+    max-width:39.5rem;
+    padding-top:6.25rem;
+    margin:0 auto;
+  }
+
+  /* about me */
+  .mainText{
+    padding-bottom:3rem;
+  }
+  .about{
+      padding-bottom:16.25rem;
+  }
+  .me{
+    width:60%;
+    margin:0 auto;
+    height:20.63rem;
+    background: #fffcc9;
+  }
+  .info{
+    top:53%;
+    left:5%;
+    font-size:0.85rem;
+  }
+/* myskill */
+.mySkill{
+  padding-top:6.25rem;
+  width:31.75rem;
+  margin:0 auto;
+}
+
+.skillText>p>strong{
+  font-size:1.5rem;
+}
+.skillText{
+  background:none;
+}
+.skillIcon{padding-bottom:2rem;}
+.skillIcon>li{
+  width:4rem;
+}
+
+.ssaemText{
+  padding-bottom:6.25rem;
+}
+.contactImg{
+  width:20rem;
+  padding-bottom:2rem;
+}
+}
+@media screen and (max-width: 992px){
+}

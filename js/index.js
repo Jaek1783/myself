@@ -129,12 +129,6 @@ function slideDown(){
     var intialTranslateValue = -(slideWidth+slideMargin)*slideCount;
     slides.style.transform = 'translateX('+intialTranslateValue+'px)'
   }
-  // nextBtn.addEventListener('click',function(){
-  //   moveSlide(currentIndex-1);
-  // });
-  // prevBtn.addEventListener('click',function(){
-  //   moveSlide(currentIndex+1);
-  // });
   let timer = undefined;
   function autoSlide(){
     if(timer == undefined){
@@ -170,3 +164,19 @@ function slideDown(){
     }
   }
 }
+
+// sectionName();
+// let secName = document.querySelector('.mainText');
+// console.log(secName);
+// function sectionName(){
+//   window.addEventListener('resize',function(){
+//     let winWidth = window.innerWidth;
+//     console.log(winWidth);
+//     if(winWidth < 768){
+//       secName.classList.add('text-center');
+//     }
+//     else{
+//       secName.classList.remove('text-center');
+//     }
+//   });
+// }
