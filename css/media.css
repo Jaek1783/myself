@@ -1,4 +1,20 @@
 @charset "UTF-8";
+@media screen and (max-width: 1200px){
+  .nav{
+      padding-left:3rem;
+  }
+  .nav>li{
+    padding-left:3rem;
+  }
+  /* 섹션02 */
+  .info{
+    top:27%;
+    left:35%;
+    font-size:1rem;
+  }
+}
+@media screen and (max-width: 992px){
+}
 @media screen and (max-width:768px){
   h1{
     width:11.5rem;
@@ -24,42 +40,82 @@
   .about{
       padding-bottom:16.25rem;
   }
+  .aboutBox{
+    padding-left:0;
+  }
   .me{
-    width:60%;
     margin:0 auto;
-    height:20.63rem;
     background: #fffcc9;
   }
   .info{
     top:53%;
-    left:5%;
+    left:15%;
     font-size:0.85rem;
   }
-/* myskill */
-.mySkill{
-  padding-top:6.25rem;
-  width:31.75rem;
-  margin:0 auto;
-}
-
-.skillText>p>strong{
-  font-size:1.5rem;
-}
-.skillText{
-  background:none;
-}
-.skillIcon{padding-bottom:2rem;}
-.skillIcon>li{
-  width:4rem;
-}
-
-.ssaemText{
-  padding-bottom:6.25rem;
-}
-.contactImg{
-  width:20rem;
-  padding-bottom:2rem;
-}
-}
-@media screen and (max-width: 992px){
+  /* myskill */
+  .mySkill{
+    padding-top:6.25rem;
+    width:31.75rem;
+    margin:0 auto;
+  }
+  .skillBox>div{
+    padding-left:0;
+  }
+  .skillText>p{
+    font-size:0.88rem;
+  }
+  .skillText>p>strong{
+    font-size:1rem;
+  }
+  .skillText{
+    background:none;
+  }
+  .skillIcon{padding-bottom:2rem;}
+  .skillIcon>li{
+    width:4rem;
+    padding-left:0.5rem;
+  }
+  .ssaemText{
+    padding-bottom:6.25rem;
+  }
+  #ssaem{
+    display:block;
+    padding-left:3rem;
+    padding-bottom:3rem;
+    transition: 0.5s ease-in;
+    opacity:0;
+  }
+  #tetris{
+    display:block;
+    transition: 0.5s ease-in;
+    opacity:0;
+  }
+  #ssaem>dt{
+    width:100%;
+  }
+  #tetris>dt{
+    width:100%;
+    padding-left:1rem;
+  }
+  .porfolBox>button{
+    left:10rem;
+  }
+  .porfolBox01>button{
+    bottom:20rem;
+  }
+  .porfolBox02>button{
+    bottom:14rem;
+  }
+  /* contact style */
+  .contactBg{
+    display:block;
+    padding:2rem 2rem 3rem;
+  }
+  .contactImg{
+    width:100%;
+  }
+  .contactText{
+    font-size:0.88rem;
+    padding-left:0;
+  }
 }

@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body{
 overflow-x:hidden;
-/* background:repeat 0 0 url(../images/background/bodybg04.png); */
 }
 .fontM{
   font-family:'Headline R',arial,sans-serif;
@@ -30,20 +29,36 @@ h3{}
 /* 헤더 스타일 */
 header{
   width:100%;
+  height:50px;
 }
 h1{
-  width:18.75rem;
+  width:10rem;
   float:left;
+  padding-left:2rem;
 }
 .gnb{
   background: #fffcc9;
   z-index:1000;
 }
+.nav{
+    padding-top:0.3rem;
+}
 .nav>li{
   padding-left:6.56rem;
   line-height: 3.3rem;
 }
-
+h3.odd{
+  text-align:left;
+  padding-left:1rem;
+}
+h3.even{
+  text-align:right;
+  padding-right:1rem;
+}
+div.section{
+  padding-left:1rem;
+  padding-right:1rem;
+}
 /* my picture 섹션01 */
 .mypic{
   /* max-width:948px; */
@@ -97,9 +112,10 @@ h1{
   position:relative;
 }
 .aboutBox{
+  padding-left:6.25rem;
 }
 .me{
-  width:25%;
+  width:20.63rem;
   height:20.63rem;
   background: #fffcc9;
 }
@@ -110,7 +126,7 @@ h1{
   background-size:cover;
 }
 .info{
-  top:24%;
+  top:26%;
   left:25%;
 }
 .info>ol>li{
@@ -123,25 +139,33 @@ h1{
 .skillBr{
   display: none;
 }
+.skillBox{}
+.skillBox>div{
+  padding-left:6.25rem;
+}
 .skillText>p{
-  padding:3rem 0;
+  padding:3rem 5rem 3rem 0;
+  text-align:right;
 }
 .skillText>p>strong{
   font-size:1.5rem;
 }
-.skillText{
-  background: no-repeat 100% 0 url(../images/background/box.png);
-  background-size:cover;
-}
+.skillText{}
 .skillIcon{}
-.skillIcon>li{}
+.skillIcon>li{
+  padding-left:1rem;
+}
 
 /* 섹션04 */
 #ssaem{
+  display:flex;
+  padding-left:3rem;
+  padding-bottom:6rem;
   transition: 0.5s ease-in;
   opacity:0;
 }
 #tetris{
+  display: flex;
   transition: 0.5s ease-in;
   opacity:0;
 }
@@ -156,18 +180,41 @@ h1{
 .portfolio{
   padding-top:6.25rem;
 }
-.ssaem>dt{
-  padding-left:30px;
+.porfolBox{
+    position: relative;
 }
-.porfol>dt{padding-left:60px; padding-bottom:30px;}
+#ssaem>dt{
+  width:50%;
+}
+#tetris>dt{
+  width:40%;
+  padding-left:6rem;
+}
 #tetris>dt>img{
   border:1px solid #ccc;
 }
-button{
+
+#ssaem>dd{
+  padding-top:6rem;
+}
+#tetris>dd{
+  padding-top:5rem;
+  padding-left:3rem;
+}
+
+.porfolBox>button{
+  position:absolute;
+  left:15rem;
   padding:10px 40px;
   border:none;
   background-color:#fffcc9;
   box-shadow: 11px 8px 35px #fbf589;
+}
+.porfolBox01>button{
+  bottom:3rem;
+}
+.porfolBox02>button{
+  bottom:-3rem;
 }
 .tetrisText{
   text-align: right;
@@ -185,7 +232,18 @@ button{
 padding-top:5rem;
 }
 .contactBg{
+  display: flex;
+  justify-content: center;
   background: no-repeat 0 0 url(../images/contact/bg.png);
   background-size:cover;
   padding:5rem 0 3rem;
+}
+.contactImg{
+  width:40%;
+}
+.contactText{
+  padding-left:10rem;
+}
+.contactText>li{
+  padding-top:1rem;
 }

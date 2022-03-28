@@ -16,7 +16,6 @@ function slideUp(){
       const cloneSlide = slide[i].cloneNode(true);
       cloneSlide.classList.add('clone');
       slides.appendChild(cloneSlide);
-      // console.log(slides);
     }
     for(var i = slideCount -1; i>=0; i--){
       const cloneSlide = slide[i].cloneNode(true);
@@ -35,7 +34,6 @@ function slideUp(){
     const newSlideCount = currentSlides.length;
     // console.log(newSlideCount);
     const newWidth = (slideWidth+slideMargin)*newSlideCount + 'px';
-    console.log(newWidth);
     slides.style.width = newWidth;
   }
   function setInitialPos(){
@@ -122,7 +120,6 @@ function slideDown(){
     const newSlideCount = currentSlides.length;
     // console.log(newSlideCount);
     const newWidth = (slideWidth+slideMargin)*newSlideCount + 'px';
-    console.log(newWidth);
     slides.style.width = newWidth;
   }
   function setInitialPos(){
@@ -164,19 +161,3 @@ function slideDown(){
     }
   }
 }
-
-// sectionName();
-// let secName = document.querySelector('.mainText');
-// console.log(secName);
-// function sectionName(){
-//   window.addEventListener('resize',function(){
-//     let winWidth = window.innerWidth;
-//     console.log(winWidth);
-//     if(winWidth < 768){
-//       secName.classList.add('text-center');
-//     }
-//     else{
-//       secName.classList.remove('text-center');
-//     }
-//   });
-// }
