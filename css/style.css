@@ -40,13 +40,27 @@ h1{
   background: #fffcc9;
   z-index:1000;
 }
+nav{
+  display:flex;
+  justify-content: center;
+}
+nav>.btn{
+  position:absolute;
+  right:10%;
+  display:none;
+  padding:0;
+  margin-top:0.5rem;
+  width:2rem;
+}
 .nav{
     padding-top:0.3rem;
+    width:90%;
 }
 .nav>li{
   padding-left:6.56rem;
   line-height: 3.3rem;
 }
+
 h3.odd{
   text-align:left;
   padding-left:1rem;
@@ -58,6 +72,25 @@ h3.even{
 div.section{
   padding-left:1rem;
   padding-right:1rem;
+}
+/* 서브 네비게이션 */
+.list-group{
+  width:50%;
+  position:fixed;
+  z-index:1001;
+  top:0;
+  bottom:0;
+  right:-100%;
+  background: #fffcc9;
+}
+.list-group.animated{
+  transition: 0.5s ease-in;
+}
+.btn-close{
+  text-align: right;
+}
+.list-group-item{
+  background-color: transparent;
 }
 /* my picture 섹션01 */
 .mypic{
@@ -103,7 +136,6 @@ div.section{
   padding:auto;
 
 }
-
 /* about Me 섹션02*/
 .mainText{}
 .about{

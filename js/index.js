@@ -161,3 +161,17 @@ function slideDown(){
     }
   }
 }
+
+burgerBtn();
+function burgerBtn(){
+  var btn = document.querySelector('nav .btn'),
+      subNav = document.querySelector('.list-group'),
+      btnClose = document.querySelector('.btn-close');
+      subNav.classList.add('animated');
+  btn.addEventListener('click',function(){
+    subNav.style.right = 0;
+  });
+  btnClose.addEventListener('click',function(){
+    subNav.style.right = - 100 + '%';
+  });
+}
